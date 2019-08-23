@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TSR Welcome page</title>
+    <link rel="stylesheet" href="Firstpage.css" />
+  </head>
+
+  <body>
+    <style>
+      #button {
+        display: flex;
+        text-align: center;
+      }
+    </style>
+    <!--
+    <img src="./Firstimg/5.jpg" height="750px" width="1300px" />
+-->
+    <div class="container">
+      <div class="title-container">
+        <h1>Welcome</h1>
+        <div class="bird-container bird-container--one">
+          <div class="bird bird--one"></div>
+        </div>
+
+        <div class="bird-container bird-container--two">
+          <div class="bird bird--two"></div>
+        </div>
+
+        <div class="bird-container bird-container--three">
+          <div class="bird bird--three"></div>
+        </div>
+
+        <div class="bird-container bird-container--four">
+          <div class="bird bird--four"></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>
+        1.여행을 다닐 때 사진 찍는 것을 좋아합니까? 눈으로 보는 것을 좋아합니까?
+        <div>
+          <p>
+            <input type="radio" name="chk_info" value="사진" />사진 찍는 거
+            <input type="radio" name="chk_info" value="눈" />눈으로 보는 거
+          </p>
+        </div>
+      </h2>
+      <h2>
+        2.여행을 갔을 때 밥이 더 중요합니까? 숙소가 더 중요합니까?
+        <p>
+          <input type="radio" name="chk_info" value="음식" />음식 선택
+          <input type="radio" name="chk_info" value="숙소" />숙소 선택
+        </p>
+      </h2>
+      <h2>
+        3.새로운 것을 좋아합니까? 익숙한 것을 좋아합니까?
+        <p>
+          <input type="radio" name="chk_info" value="새로운 것" />새로운 것
+          <input type="radio" name="chk_info" value="익숙한 것" />익숙한 것
+        </p>
+      </h2>
+    </div>
+
+    <button id="button">
+      <img src="sign.jpg" width="80px" />
+    </button>
+    <script src="Firstpage.js"></script>
+  </body>
+</html>
