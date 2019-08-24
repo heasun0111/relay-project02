@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TSR Welcome page</title>
+    <link rel="stylesheet" href="Firstpage.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <h1>Welcome to TSR</h1>
+        <h2>Travel Spot Recommender</h2>
+
+        <div class="bird-container bird-container--one">
+          <div class="bird bird--one"></div>
+        </div>
+
+        <div class="bird-container bird-container--two">
+          <div class="bird bird--two"></div>
+        </div>
+
+        <div class="bird-container bird-container--three">
+          <div class="bird bird--three"></div>
+        </div>
+
+        <div class="bird-container bird-container--four">
+          <div class="bird bird--four"></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <!-- DB에 저장할 input  -->
+      <h2>
+        1. 선호하는 여행스타일은?
+        <div>
+          <p>
+            <label for="spot1"><input type="radio" id="spot1" name="spot" value="1"> 휴양지</label>
+            <label for="spot2"><input type="radio" id="spot2" name="spot" value="2"> 액티비티</label>
+            <label for="spot3"><input type="radio" id="spot3" name="spot" value="3"> 자연경관</label>
+          </p>
+        </div>
+      </h2>
+      <h2>
+        2. 숙소 선택 시 가장 중요한 요소?
+        <p>
+          <label for="accommodation1"><input type="radio" id="accommodation1" name="accommodation" value="1"> 접근성</label>
+          <label for="accommodation2"><input type="radio" id="accommodation2" name="accommodation" value="2"> 룸서비스</label>
+          <label for="accommodation3"><input type="radio" id="accommodation3" name="accommodation" value="3"> 가격</label>
+        </p>
+      </h2>
+      <h2>
+        3. 예산은 어느정도인가요?
+        <p>
+          <label for="budget1"><input type="radio" id="budget1" name="budget" value="1"> 100만원 미만</label>
+          <label for="budget2"><input type="radio" id="budget2" name="budget" value="2"> 100만원 이상</label>
+          <label for="budget2"><input type="radio" id="budget2" name="budget" value="3"> 200만원 이상</label>
+        </p>
+      </h2>
+    </div>
+
+    <button id="button">
+      <img src="NextButton.png" width="130px" />
+
+    </button>
+    <script src="Firstpage.js"></script>
+  </body>
+</html>
