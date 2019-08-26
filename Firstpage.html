@@ -12,18 +12,11 @@
   </head>
 
   <body>
-    <style>
-      #button {
-        display: flex;
-        text-align: center;
-      }
-    </style>
-    <!--
-    <img src="./Firstimg/5.jpg" height="750px" width="1300px" />
--->
     <div class="container">
       <div class="title-container">
-        <h1>Welcome</h1>
+        <h1>Welcome to TSR</h1>
+        <h2>Travel Spot Recommender</h2>
+
         <div class="bird-container bird-container--one">
           <div class="bird bird--one"></div>
         </div>
@@ -43,33 +36,37 @@
     </div>
 
     <div>
+      <!-- DB에 저장할 input  -->
       <h2>
-        1.여행을 다닐 때 사진 찍는 것을 좋아합니까? 눈으로 보는 것을 좋아합니까?
+        1. 선호하는 여행스타일은?
         <div>
           <p>
-            <input type="radio" name="chk_info" value="사진" />사진 찍는 거
-            <input type="radio" name="chk_info" value="눈" />눈으로 보는 거
+            <label for="spot1"><input type="radio" id="spot1" name="spot" value="1"> 휴양지</label>
+            <label for="spot2"><input type="radio" id="spot2" name="spot" value="2"> 액티비티</label>
+            <label for="spot3"><input type="radio" id="spot3" name="spot" value="3"> 자연경관</label>
           </p>
         </div>
       </h2>
       <h2>
-        2.여행을 갔을 때 밥이 더 중요합니까? 숙소가 더 중요합니까?
+        2. 숙소 선택 시 가장 중요한 요소?
         <p>
-          <input type="radio" name="chk_info" value="음식" />음식 선택
-          <input type="radio" name="chk_info" value="숙소" />숙소 선택
+          <label for="accommodation1"><input type="radio" id="accommodation1" name="accommodation" value="1"> 접근성</label>
+          <label for="accommodation2"><input type="radio" id="accommodation2" name="accommodation" value="2"> 룸서비스</label>
+          <label for="accommodation3"><input type="radio" id="accommodation3" name="accommodation" value="3"> 가격</label>
         </p>
       </h2>
       <h2>
-        3.새로운 것을 좋아합니까? 익숙한 것을 좋아합니까?
+        3. 예산은 어느정도인가요?
         <p>
-          <input type="radio" name="chk_info" value="새로운 것" />새로운 것
-          <input type="radio" name="chk_info" value="익숙한 것" />익숙한 것
+          <label for="budget1"><input type="radio" id="budget1" name="budget" value="1"> 100만원 미만</label>
+          <label for="budget2"><input type="radio" id="budget2" name="budget" value="2"> 100만원 이상</label>
+          <label for="budget2"><input type="radio" id="budget2" name="budget" value="3"> 200만원 이상</label>
         </p>
       </h2>
     </div>
 
     <button id="button">
-      <img src="sign.jpg" width="80px" />
+      <img src="NextButton.png" width="130px" />
     </button>
     <script src="Firstpage.js"></script>
   </body>
